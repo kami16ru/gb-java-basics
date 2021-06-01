@@ -1,4 +1,4 @@
-package geekbrains.java_basics;
+package geekbrains.java_basics.lesson_1;
 
 public class Main {
 

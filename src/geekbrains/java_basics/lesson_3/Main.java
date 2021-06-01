@@ -4,13 +4,20 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Ваша задача угадать число.");
 
         int range = 30;
         int randomNumber = (int) (Math.random() * range);
 
+        playLevel(range, randomNumber);
+
+        scanner.close();
+    }
+
+    private static void playLevel(int range, int randomNumber) {
         while (true) {
             System.out.println("Угадайте число от 0 до " + range);
 
@@ -24,7 +31,5 @@ public class Main {
                 System.out.println("Загаданное число больше.");
             }
         }
-
-        scanner.close();
     }
 }

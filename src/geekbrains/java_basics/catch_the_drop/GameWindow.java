@@ -46,6 +46,8 @@ public class GameWindow extends JFrame {
                     drop_left = (int) (Math.random() * (game_field.getWidth() - drop.getWidth(null)));
 
                     drop_v = drop_v + 20;
+
+                    toggleUpScore();
                 }
             }
         });
